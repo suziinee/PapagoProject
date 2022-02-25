@@ -1,0 +1,284 @@
+/* reset.css */
+html, body {
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', 'sans-serif';
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* General */
+i {
+    color: #6c757d;
+}
+
+body {
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+header {
+    height: 20vh;
+}
+
+section {
+    flex-grow: 1;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+header, section, footer {
+    flex-shrink: 0;
+}
+
+textarea {
+    border: none;
+    resize: none;
+}
+
+hr {
+    margin-top: 0;
+}
+
+
+/* Header */
+.Header {
+    display: flex; /* 수평이 됨 */
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px;
+    padding: 10px 0;
+}
+
+.Header_main {
+    display: flex; /* 정렬 */
+    align-items: center; /* 중앙 */
+}
+
+.Header_main_menu {
+    display: flex;
+    margin-left: 20px;
+}
+
+.Header_main_menu li {
+    margin: 6px;
+    font-size: 1rem;
+}
+
+.Header_sub {
+    display: flex;
+    align-items: center;
+}
+
+.Header_sub_icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.Header_sub_icon {
+    margin: 10px; /* icon끼리 밀어내기 */
+}
+
+.Header_sub_profile {
+    display: flex;
+    align-items: center; /* 수직 정렬 */
+    margin-left: 14px;
+}
+
+.Header_sub_profile_username {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+
+
+/* Dynamic color */
+.colorful-font,
+.Header_sub_profile_image i {
+  margin: 0;
+  color: #313131;
+  font-weight: bold;
+  -webkit-animation: colorchange 10s infinite alternate;
+  animation: colorchange 10s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: blue;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+
+  90% {
+    color: #2980b9;
+  }
+
+  100% {
+    color: pink;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    color: blue;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+
+  90% {
+    color: #2980b9;
+  }
+
+  100% {
+    color: pink;
+  }
+}
+
+
+
+/* Card */
+.Card {
+    display: flex;
+    flex-direction: column; /* 수평이 되었을때 다시 세로로 만들어줌 */
+    width: 30vw;
+    align-items: center; /* column이기 때문에 수직 정렬 */
+    height: 40vh;
+    margin: 0 20px;
+    border: 0.5px solid #adb5bd;
+}
+
+.Card:first-child {
+    border: 2px dashed #21dc6d;
+}
+
+.Card_header {
+    margin: 20px;
+}
+
+.Card_body {
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+    flex: 1 1 auto;
+}
+
+.Card_body_textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.Card_body_content {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.Card_body_content:focus {
+    outline: 0.5px white;
+}
+
+
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.footer_sns {
+    display: flex;
+}
+
+.footer_sns li {
+    margin: 0 10px;
+}
+
+.footer_menu  {
+    display: flex;
+}
+
+.footer_menu li {
+    margin: 0 10px;
+}
+
+
